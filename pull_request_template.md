@@ -1,9 +1,12 @@
 <!-- do not edit this line --><table border="0" cellspacing="0" cellpadding="0" compact><tr><td width="480" valign="top">
 <!-- please follow the template -->
-<h3>Context</h3>
+
+### Context
+
 Explain here why this PR is needed
 
-<h3>Solution</h3>
+### Solution
+
 If needed, explain here the solution you chose for this
 
 <!-- Uncomment this if you need a testing plan
