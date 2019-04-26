@@ -1,6 +1,3 @@
-<!-- do not edit this line --><table border="0" cellspacing="0" cellpadding="0" compact><tr><td width="480" valign="top">
-<!-- please follow the template -->
-
 ### Context
 
 Explain here why this PR is needed
@@ -15,5 +12,6 @@ If needed, explain here the solution you chose for this
 - [ ] Test that
 -->
 
-<!-- do not edit after this --></td><td width="180" valign="top">This will be auto filled by reviewflow.</td></tr></table>
+<!-- do not edit after this -->
+This will be auto filled by reviewflow.
 <!-- end - don't add anything after this -->
