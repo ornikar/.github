@@ -1,17 +1,17 @@
-### Context
+### Contexte
 
-Explain here why this PR is needed
+Explique ici pourquoi on a besoin de cette PR
 
 ### Solution
 
-If needed, explain here the solution you chose for this
+Si besoin, explique ici la solution que tu as choisis
 
-<!-- Uncomment this if you need a testing plan
-<h3>Testing plan</h3>
-- [ ] Test this
-- [ ] Test that
+<!-- Décommente si tu as besoin d'un plan de test
+<h3>Plan de test</h3>
+- [ ] Tester ceci
+- [ ] Tester cela
 -->
 
 <!-- do not edit after this -->
-This will be auto filled by reviewflow.
+Cette partie sera remplie par reviewflow.
 <!-- end - don't add anything after this -->
