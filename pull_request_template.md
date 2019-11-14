@@ -7,7 +7,7 @@ Explain here why this PR is needed
 If needed, explain here the solution you chose for this
 
 <!-- Uncomment this if you need a testing plan
-<h3>Testing plan</h3>
+### Testing plan
 - [ ] Test this
 - [ ] Test that
 -->
