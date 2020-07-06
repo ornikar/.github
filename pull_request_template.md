@@ -11,7 +11,3 @@ If needed, explain here the solution you chose for this
 - [ ] Test this
 - [ ] Test that
 -->
-
-<!-- do not edit after this -->
-This will be auto filled by reviewflow.
-<!-- end - don't add anything after this -->
