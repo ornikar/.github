@@ -11,3 +11,10 @@
 - [ ] Test this
 - [ ] Test that
 -->
+
+<!-- Uncomment this if you have a mixpanel dashboard related to this PR that allows us to track it in production
+### Mixpanel dashboard
+
+- Staging: Link
+- Production: Link
+-->
