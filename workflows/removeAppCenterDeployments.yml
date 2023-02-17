@@ -1,0 +1,37 @@
+name: remove-app-center-deployments
+run-name: Remove AppCenter deployments for this PR
+
+on:
+  workflow_call:
+
+inputs:
+  appcenter-android-api-token:
+    description: 'AppCenter Android API Token'
+    required: true
+  appcenter-ios-api-token:
+    description: 'AppCenter iOS API Token'
+    required: true
+  appcenter-android-app-name:
+    description: 'AppCenter Android App Name'
+    required: true
+  appcenter-ios-app-name:
+    description: 'AppCenter iOS App Name'
+    required: true
+
+jobs:
+  remove-app-center-deployments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v6
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install -g appcenter-cli
+      - name: Create iOS codepush deployment
+        run: |
+          appcenter codepush deployment remove --token "$INPUT_APPCENTER-IOS-API-TOKEN" -a "$INPUT_APPCENTER-IOS-APP-NAME"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
+      - name: Create Android codepush deployment
+        run: |
+          appcenter codepush deployment remove --token "$INPUT_APPCENTER-ANDROID-API-TOKEN" -a "$INPUT_APPCENTER-ANDROID-APP-NAME"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
