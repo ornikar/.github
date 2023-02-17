@@ -31,7 +31,7 @@ jobs:
       - run: npm install -g appcenter-cli
       - name: Create iOS codepush deployment
         run: |
-          appcenter codepush deployment add --token "$INPUT_APPCENTER-IOS-API-TOKEN" -a "$INPUT_APPCENTER-IOS-APP-NAME"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
+          appcenter codepush deployment add --token "${{ github.event.inputs.appcenter-ios-api-token }}" -a "Ornikar/${{ github.event.inputs.appcenter-ios-app-name }}"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
       - name: Create Android codepush deployment
         run: |
-          appcenter codepush deployment add --token "$INPUT_APPCENTER-ANDROID-API-TOKEN" -a "$INPUT_APPCENTER-ANDROID-APP-NAME"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
+          appcenter codepush deployment add --token "${{ github.event.inputs.appcenter-android-api-token }}" -a "Ornikar/${{ github.event.inputs.appcenter-android-app-name }}"  $(echo "${{ steps.branch-name.outputs.current_branch }}" | sed -r 's/\//_/g')
